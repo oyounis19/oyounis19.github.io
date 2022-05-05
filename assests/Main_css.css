@@ -222,7 +222,7 @@ body{ background-color:var(--primary-color39);}
 .books_heading39container, .ai39container, .hardware39container, .notes39container, .security39container, .software39container{
     position: relative;
     padding:30px;
-    height:80vh;
+    min-height:80vh;
     overflow: hidden;
 }
 .ai39container, .notes39container, .software39container{
@@ -231,7 +231,7 @@ body{ background-color:var(--primary-color39);}
 .books_heading39, .ai39, .hardware39, .notes39, .security39, .software39{
     position: relative;
     width:80%;
-    height:80%;
+    min-height:80%;
     margin: auto;
 }
 .books_heading39{
