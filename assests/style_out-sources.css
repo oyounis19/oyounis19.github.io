@@ -1,0 +1,166 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --top-color27:#84b1ae;
+    --bottom-color27:#cdeeec;
+    --bottom-text27:#16123f;
+    --top-text-color27:white;
+}
+.dark-theme {
+    --top-color27:#232931;
+    --bottom-color27:#393E46;
+    --bottom-text27:#4ECCA3;
+    --top-text-color27:#EEEEEE;   
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 5px;
+
+  }
+
+::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 5px;
+  }
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  } 
+
+div.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    background-color: var(--top-color27);
+    transition: all 0.3s;
+}
+
+div.top span {
+    display: flex;
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+    font-size: 7em;
+    letter-spacing: 3px;
+    color: var(--top-text-color27);
+    overflow: hidden;
+    border-right: .10em solid #FFE26A;
+    white-space: nowrap;
+    animation: typing 2s steps(20, end) 0.1s forwards;
+}
+
+@keyframes typing {
+    from {
+        flex-basis:0;
+        justify-content: flex-start;
+    }
+
+    99.9% {
+        flex-basis:9em;
+        border-right-color: #FFE26A;
+        white-space: nowrap;
+        justify-content: flex-start;
+    }
+
+    100% {
+        flex-basis:9em;
+        border-right-color: transparent;
+        white-space: normal;
+        justify-content: center;
+    }
+}
+
+.bottom {
+    background-color: var(--bottom-color27);
+    transition: all 0.3s;
+}
+
+.bottom .title {
+    display: flex;
+    justify-content: center;
+    color: var(--bottom-text27);
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 600;
+    font-size: 3.2em;
+    padding: 10px;
+
+}
+
+.bottom #between {
+    color: var(--bottom-text27);
+    font-size: 24px;
+    font-family: 'Hind', sans-serif;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.bottom div.cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.bottom div.cards span {
+    position: relative;
+    width: 20em;
+    height: 20em;
+    margin: 20px 0;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px 0px #16123f;
+    transition: box-shadow 0.4s;
+}
+
+.bottom div.cards span:hover {
+    box-shadow: 2px 2px 20px 1px #16123f;
+}
+
+.bottom div.cards span a img {
+    position: relative;
+    border-radius: 20px;
+    width: 20em;
+    height: 20em;
+    transition: all 0.3s;
+}
+
+.bottom div.cards span a span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    border-radius: 0 0 20px 20px;
+    background-color: #ddd;
+    width: 100%;
+    height: 0%;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+    color: #161616;
+    opacity: 0;
+    margin-bottom: 0px;
+    z-index: -1;
+    transition: all 0.3s;
+}
+
+.bottom div.cards span a img:hover+span,
+.bottom div.cards span a span:hover {
+    opacity: 1;
+    z-index: 1;
+    height: 20%;
+}
+
+.bottom div.cards span a img:hover {
+    box-shadow: 2px 2px 20px 10px #16123f;
+    transform: scale(1.2);
+}

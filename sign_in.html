@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Coding-Steps: SignIn</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" value="Online school teaching programming fundamentals and advanced programming">
+        <meta charset="UTF-8"/>
+        <link rel="stylesheet" href="assests/Main_css.css">
+        <link rel="shortcut icon" href="images/design-thinking.png">
+    </head>
+    <body>
+<!--_____________________________________________Heading_____________________________________________-->
+<div class="homeheading" id="top">
+    <div class="navebarcontainer">
+        <div class="navebar">                
+            <div class="logo">
+                <a href="index.html">
+                    <image src="images/design-copythinking.png" alt="Coding Steps Logo"/>
+                    <figcaption>Coding-Steps</figcaption>
+                </a>
+            </div>
+            <div class="naveitems">
+                <ul class="parentnave">
+                    <li>
+                        <a href="search.html"><image src="images/search.png"/></a>
+                        <figcaption class="nevetempitems">Search</figcaption>
+                    </li>
+                    <li>
+                        <a href="index.html"><image src="images/home.png"/></a>
+                        <figcaption class="nevetempitems">&nbsp;&nbsp;Home</figcaption>
+                    </li>
+                    <li>
+                        <a href="sign_in.html"><image src="images/sign-in.png"/></a>
+                        <figcaption class="nevetempitems">Sign in</figcaption>
+                    </li>
+                    <li>
+                        <a href="sign_up.html"><image src="images/user.png"/></a>
+                        <figcaption class="nevetempitems">Sign up</figcaption>
+                    </li>
+                    
+                    <li class="navelist">
+                        <a href="#"><img src="images/list.png"/></a>
+                        <ul>
+                            <li>
+                                <a href="books.html" title="Go to Books section"><image src="images/book.png"/></a>
+                                <figcaption class="nevetempitems">Books</figcaption>
+                            </li>
+                            <li>
+                                <a href="home_works.html"><image src="images/pencil.png"/></a>
+                                <figcaption class="nevetempitems">Home works</figcaption>
+                            </li>
+                            <li>
+                                <a href="articles.html"><image src="images/document.png"/></a>
+                                <figcaption class="nevetempitems">Articles</figcaption>
+                            </li>
+                            <li>
+                                <a href="studying_maps.html"><image src="images/maps.png"/></a>
+                                <figcaption class="nevetempitems">Studying maps</figcaption>
+                            </li>
+                            <li>
+                                <a href="out_sources.html"><image src="images/outsourcing.png"/></a>
+                                <figcaption class="nevetempitems">Outsources</figcaption>
+                            </li>
+                            <li>
+                                <a href="road_maps.html"><image src="images/road.png"/></a>
+                                <figcaption class="nevetempitems">Road maps</figcaption>
+                            </li>
+                            <li>
+                                <a href="problems_ solutions.html"><image src="images/magic-wand.png"/></a>
+                                <figcaption class="nevetempitems">Problems and solutions</figcaption>
+                            </li>
+                            <li>
+                                <a href="support_us.html"><image src="images/heart.png"/></a>
+                                <figcaption class="nevetempitems">Support Us</figcaption>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <image src="images/moon.png" id="themeicon"/>
+                    </li>
+                </ul>
+            </div> 
+        </div>
+    </div>
+</div>
+<!--____________________________________________Body_____________________________________________-->
+<!--_____________________________________________Footer_____________________________________________-->
+<div class="homefooter">
+    <ul class="footerlist">
+        <div class="upperfooterlist">
+            <li>
+            <a href="contact_us.html"><image src="images/telephone.png"/></a>
+            <figcaption class="foottempitems">contact Us</figcaption>
+            </li>
+            <li>
+                <a href="about_us.html"><image src="images/fingerprint.png"/></a>
+                <figcaption class="foottempitems">About Us</figcaption>
+            </li>
+        </div>
+        <div class="lowerfooterlist">
+            <li>
+            <a href="feedback.html"><image src="images/email.png"/></a>
+            <figcaption class="foottempitems">Feedback</figcaption>
+            </li>
+            <li>
+                <a href="statistics.html"><image src="images/analytics.png"/></a>
+                <figcaption class="foottempitems">Statistics</figcaption>
+            </li>
+        </div>
+    </ul>
+    <div class="foottalk">
+        <p>
+            <i>Coding-Steps developers family:</i><br><br>Omar Younnes&nbsp;||&nbsp;AmrKhaledSaleh&nbsp;||&nbsp;OmarHammad&nbsp;<br>
+            OmarHamoda&nbsp;||&nbsp;OmarMagdy&nbsp;||&nbsp;AmrKhaledElsayed<br>OmarYoussef&nbsp;||&nbsp;OmarYasser.<br><br>
+            &copy;All copyrights reserved to team M.E.G. 2022.
+        </p>
+    </div>
+    <div class="topbutton">
+        <a href="#top"><image src="images/butterfly.png"/></a>
+        <figcaption class="bottemp">Top</figcaption>
+    </div>
+</div>
+<script>
+    var icon=document.getElementById("themeicon");
+    icon.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+            icon.src="images/sun.png"
+        }
+        else{
+            icon.src="images/moon.png"
+        }
+    }
+</script>
+</body>
+</html>
