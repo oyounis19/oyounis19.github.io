@@ -86,7 +86,6 @@ div.left>span {
     position: absolute;
     top: 15%;
     left: 5%;
-    font-family: 'Lobster', cursive;
     letter-spacing: 1px;
     color: var(--left-text27);
     overflow: hidden;
@@ -100,6 +99,7 @@ div.left>span {
 div.left>span div {
   opacity: 0;
   text-indent: 5px;
+  font-family: 'Lobster', cursive !important;
 }
 div.left span div.first {
   overflow: hidden;
