@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Coding-Steps</title>
+        <title>Coding Steps</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" value="Online school teaching programming fundamentals and advanced programming">
         <meta charset="UTF-8"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="assests/Main_css.css">
+
         <link rel="shortcut icon" href="images/design-thinking.png">
     </head>
     <body>
 <!--_____________________________________________Heading_____________________________________________-->
         <div class="homeheading" id="top">
             <div class="navebarcontainer">
-                <div class="navebar">                
+                <div class="navebar" id="navbar">                
                     <div class="logo">
                         <a href="index.html">
                             <image src="images/design-copythinking.png" alt="Coding Steps Logo"/>
-                            <figcaption style="font-family: 'Fira Sans', sans-serif;">Coding Steps</figcaption>
+                            <figcaption>Coding Steps</figcaption>
                         </a>
                     </div>
                     <div class="naveitems">
@@ -79,7 +80,7 @@
                                 </ul>
                             </li>
                             <li>
-                                <image src="images/moon.png" id="themeicon"/>
+                                <image src="images/moon.png" id="themeicon" class="button"/>
                             </li>
                         </ul>
                     </div> 
@@ -92,7 +93,7 @@
                 <image src="images/design-thinking.png"/>
                 <h1 id="welcom">Welcome to Coding Steps</h1>
                 <h5 style="font-family: 'Fira Sans', sans-serif;">
-                    Coding-steps academy is an educational platform that presents many development paths with <br>detailed interactive explanations,
+                    Coding steps academy is an educational platform that presents many development paths with <br>detailed interactive explanations,
                     study plans with exams to ensure understanding and application of the code.
                 </h5>
             </div>
@@ -172,11 +173,11 @@
                 <div class="upperfooterlist">
                     <li>
                     <a href="contact_us.html"><image src="images/telephone.png"/></a>
-                    <figcaption class="foottempitems">contact Us</figcaption>
+                    <figcaption class="foottempitems">Contact us</figcaption>
                     </li>
                     <li>
                         <a href="about_us.html"><image src="images/fingerprint.png"/></a>
-                        <figcaption class="foottempitems">About Us</figcaption>
+                        <figcaption class="foottempitems">About us</figcaption>
                     </li>
                 </div>
                 <div class="lowerfooterlist">
@@ -192,7 +193,7 @@
             </ul>
             <div class="foottalk">
                 <p>
-                    <i>Coding-Steps developers family:</i><br><br>Omar Younnes&nbsp;||&nbsp;AmrKhaledSaleh&nbsp;||&nbsp;OmarHammad&nbsp;<br>
+                    <i>Coding Steps developers family:</i><br><br>Omar Younnes&nbsp;||&nbsp;AmrKhaledSaleh&nbsp;||&nbsp;OmarHammad&nbsp;<br>
                     OmarHamoda&nbsp;||&nbsp;OmarMagdy&nbsp;||&nbsp;AmrKhaledElsayed<br>OmarYoussef&nbsp;||&nbsp;OmarYasser.<br><br>
                     &copy;All copyrights reserved to team M.E.G. 2022.
                 </p>
@@ -202,17 +203,7 @@
                 <figcaption class="bottemp">Top</figcaption>
             </div>
         </div>
-        <script>
-            var icon=document.getElementById("themeicon");
-            icon.onclick = function(){
-                document.body.classList.toggle("dark-theme");
-                if(document.body.classList.contains("dark-theme")){
-                    icon.src="images/sun.png"
-                }
-                else{
-                    icon.src="images/moon.png"
-                }
-            }
-        </script>
+        
+        <script src="js/javascript.js"></script>
     </body>
 </html>

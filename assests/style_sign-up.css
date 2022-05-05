@@ -65,6 +65,7 @@ div.page {
     display: flex;
     flex-direction: row;
     overflow: hidden;
+    margin-top: -5px;
 }
 
 div.left {
