@@ -64,6 +64,7 @@
     border-radius: 30px;
     color: var(--four-color);
     transition: all 0.3s;
+    padding: 10px;
     }
   .main-heading h1:hover{
     background-color: var(--third-color);
