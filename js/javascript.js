@@ -18,6 +18,7 @@ icon.addEventListener("click", function () {
     });
     if(currentTheme == "dark"){
         document.body.classList.toggle("dark-theme");
+        icon.src="images/sun.png";
     }
 
 //navbar hiding on scrolling up---------------------------------------
