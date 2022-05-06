@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans|Roboto');
+*{
+ margin:0;
+ padding: 0;
+ outline: 0;
+}
+:root{
+    --primary-color:#fafafa;
+    --secondary-color:#eeeeee;
+    --third-color:#000000;
+    --four-color:rgba(199, 221, 204,1);
+    --five-color:rgba(171, 214, 153,1);
+    --h1color: #232931;
+  }
+.dark-theme{
+    --primary-color:#6e6e6e;
+    --secondary-color:#4b4b4b;
+    --third-color:#ffffff;
+    --four-color:rgb(0, 0, 0);
+    --five-color:#263d1c;
+    --h1color: whitesmoke;
+}
+body{
+    text-align: center;
+}
+h1{
+    font-family: 'Open Sans',Sans-serif;
+    font-weight: 700;
+    font-size: 40pt;
+    margin-top: 30px;
+    color: var(--h1color);
+}
+.filter{
+ position: absolute;
+ left: 0;
+ top: 0;
+ bottom: 0;
+ right: 0;
+ z-index: 1;
+ background: rgb(199, 221, 204);
+background: -moz-linear-gradient(90deg, var(--four-color) 0%, var(--five-color) 100%);
+background: -webkit-linear-gradient(90deg, var(--four-color) 0%, var(--five-color) 100%);
+background: linear-gradient(90deg, var(--four-color) 0%, var(--five-color) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e94ca1",endColorstr="#c74ae9",GradientType=1);
+opacity: .7;
+}
+table{
+ position: absolute;
+ z-index: 2;
+ left: 50%;
+ top: 57%;
+ transform: translate(-50%,-50%);
+ width: 60%; 
+ border-collapse: collapse;
+ border-spacing: 0;
+ box-shadow: 0 2px 15px rgba(64,64,64,.7);
+ border-radius: 12px;
+ overflow: hidden;
+
+}
+td , th{
+ padding: 15px 20px;
+ text-align: center;
+ transition: none;
+ 
+
+}
+th{
+ background-color: #75c9b7;
+ color: #fafafa;
+ font-family: 'Open Sans',Sans-serif;
+ font-weight: 200;
+ text-transform: uppercase;
+
+}
+tr{
+ width: 100%;
+ background-color: var(--primary-color);
+ font-family: 'Montserrat', sans-serif;
+ color: var(--third-color);
+}
+tr:nth-child(even){
+ background-color: var(--secondary-color);
+}
