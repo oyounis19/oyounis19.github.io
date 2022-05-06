@@ -1,0 +1,126 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--back-body-color);
+    font-family: Arial;
+}
+:root{
+    --back-body-color:#44b09b;
+    --back-all-color:#75C9B7;
+    --title-color:#182c5d;
+    --newaccount-color:#182c5d;
+    --bor-color:white;
+    --typ-color:#DFDCE3;
+    --submitbackcolor: #efefef;
+    --submitcolor: #182c5d;
+    --submitcolorhov:whitesmoke;
+}
+.dark-theme{
+    --back-body-color:#393E46;
+    --back-all-color:#232931;
+    --title-color:white;
+    --newaccount-color:white;
+    --bor-color:#4ECCA3;
+    --typ-color:#4ECCA3;
+    --submitbackcolor: #232323;
+    --submitcolor: whitesmoke;
+    --submitcolorhov:#232323;
+}
+
+.body {
+    margin-top: 85px;
+}
+h1 {
+    color: var(--title-color);
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 40px;
+    margin-top: 70px;
+}
+
+.all {
+    width: 550px;
+    height: 100%;
+    background-color: var(--back-all-color);
+    color:var(--newaccount-color) ;
+    border: 3px solid var(--back-all-color);
+    position: absolute;
+    left: 80.55%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.value {
+    width: 150px;
+    height: 40px;
+    margin-left: 195px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    border: none;
+    border-radius: 10px;
+    color:var(--submitcolor);
+    font-size: 30px;
+    background-color: var(--submitbackcolor);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+.value:hover {
+    background-color: var(--title-color);
+    color: var(--submitcolorhov);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.7);
+}
+form a {
+    transition: color 0s;
+}
+form a:hover {
+    color: rgb(46, 46, 224);
+}
+.enter {
+    width: 200px;
+    height: 40px;
+    margin-left: 180px;
+    margin-bottom: 40px;
+    border: 1px solid var(--bor-color);
+    border-radius: 10px;
+    outline: none;
+}
+input {
+    padding: 5px;
+}
+.me {
+    margin-bottom: 40px;
+}
+form {
+    margin-top: 100px;
+    padding: 10px;
+}
+.forget{
+    margin-bottom: 15px;
+
+}
+label {
+    cursor: pointer;
+    transition: none;
+}
+.forget1{
+    text-decoration: underline;
+    color: var(--newaccount-color) ;
+}
+.type{
+    color: var(--typ-color);
+    margin-left: 130px;
+    margin-top: 150px;
+    font-size: 160px;
+    font-family: 'Lobster', cursive;
+}
+.space{
+    word-spacing: 50px;
+    margin-left: 50px;
+    font-family: 'Lobster', cursive;
+    transition: none;
+}
+.homefooter {
+    top: 126px;
+    opacity: 1;
+}

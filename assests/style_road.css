@@ -1,0 +1,105 @@
+body {
+    background-color: var(--back-body-color);
+}
+:root{
+    --back-body-color:#d2cfd6;
+    --back-road-color:#8fd173;
+    --border-color:rgba(177, 172, 183, 0.711);
+    --hover-color: #eff7f2;
+    --main-color:#3053dc;
+    --line1-color:#c7DDCC;
+    --title-color:#16123F;
+    --bord-color:#8fd173;
+    --steps-color:#75C9B7;
+    --steps-border-color:#8fd173;
+    --circle-color:#FFE26A;
+    --apper-color:black;
+}
+.dark-theme{
+    --back-body-color:#232931;
+    --back-road-color:#393E46;
+    --border-color:rgba(177, 172, 183, 0.711);
+    --hover-color: #eff7f2;
+    --main-color:#3053dc;
+    --line1-color:#c7DDCC;
+    --title-color:#393E46;
+    --bord-color:#4ECCA3;
+    --steps-color:#393E46;
+    --steps-border-color:#4ECCA3;
+    --circle-color:#4ECCA3;
+    --apper-color:white;
+}
+
+.road {
+    background-color: var(--back-road-color);
+    height: 100px;
+    width: 500px;
+    margin: 20px;
+    padding-top: 40px;
+    border: 5px solid var(--border-color);
+    border-radius: 20PX;
+    transition-duration: 0.3s;
+}
+
+.road:hover {
+    transform: scale(1.1);
+    background-color: var(--hover-color);
+}
+.line {
+    text-align: center;
+    font-size: 40px;
+    font-style: arial;
+    color: var(--main-color);
+}
+
+.line1 {
+    text-align: center;
+    font-size: 30px;
+    font-style: arial;
+    color: var(--line1-color);
+}
+.titel {
+    background-color: var(--title-color);
+    height: 80px;
+    width: 900px;
+    margin: 60px;
+    margin-left: 200px;
+    border: 5px solid var(--bord-color);
+    border-radius: 20px;
+    word-break: break-all;
+}
+
+.steps {
+    background-color:var(--steps-color) ;
+    height: 250px;
+    width: 900px;
+    margin: 40px;
+    margin-left: 200px;
+    border: 3px solid var(--steps-border-color);
+    border-radius: 20px;
+
+}
+
+
+.circle {
+    width: 40px;
+    height: 40px;
+    background: var(--circle-color);
+    border-radius: 20px;
+    text-align: center;
+    font-size: 30px;
+    margin-left: 450px;
+}
+
+.apper {
+    text-align: left;
+    font-size: 30px;
+    color: var(--apper-color);
+    margin-left: 20px;
+}
+
+.step1 {
+    text-align: left;
+    font-size: 24px;
+    margin-left: 25px;
+}
