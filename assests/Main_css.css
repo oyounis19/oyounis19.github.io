@@ -14,7 +14,7 @@ ul, a{
     width: 10px;
 }
 ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
+    background: var(--scrollbar39); 
     border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb {
@@ -41,6 +41,7 @@ ul, a{
     --logo39:black;
     --ultop39:#c7ddcc;
     --ulbot39:#75c9b7;
+    --scrollbar39:#f1f1f1;
 }
 .dark-theme{
     --primary-color39:#232931;
@@ -57,6 +58,7 @@ ul, a{
     --logo39:white;
     --ultop39:rgb(80, 96, 118);
     --ulbot39:rgb(55, 71, 93);
+    --scrollbar39:#232931;
 }
 
 /*_____________________________________________Heading_____________________________________________*/
