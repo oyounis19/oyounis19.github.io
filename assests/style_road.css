@@ -14,6 +14,7 @@ body {
     --steps-border-color:#8fd173;
     --circle-color:#FFE26A;
     --apper-color:black;
+    --textcol:#1e1e1eb8;
 }
 .dark-theme{
     --back-body-color:#232931;
@@ -28,6 +29,7 @@ body {
     --steps-border-color:#4ECCA3;
     --circle-color:#4ECCA3;
     --apper-color:white;
+    --textcol:#ffffff8c;
 }
 
 .road {
@@ -78,6 +80,7 @@ body {
     border: 3px solid var(--steps-border-color);
     border-radius: 20px;
     overflow: auto;
+    padding 4px;
 }
 
 
@@ -102,4 +105,5 @@ body {
     text-align: left;
     font-size: 24px;
     margin-left: 25px;
+    color:var(--textcol);
 }
