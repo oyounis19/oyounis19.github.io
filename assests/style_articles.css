@@ -57,10 +57,10 @@ nav ul {
 
 .articles .container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 150px;
+    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+    gap: 370px;
     margin-bottom: 90px;
-    padding: 0 20px;
+    padding: 0 40px;
 }
 
 .articles .box {
