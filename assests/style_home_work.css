@@ -119,6 +119,7 @@ hr{
   font-size: large;
   padding: 5px;
   margin: revert;
+  transition: none;
 }
 
 .Quizzes content a{
