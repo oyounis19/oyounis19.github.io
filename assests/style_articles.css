@@ -1,0 +1,126 @@
+:root {
+    --primary-color: white;
+    --secondary-color: black;
+    --linkhov:#0156f4;
+}
+
+.dark-theme {
+    --primary-color: #1a1d22;
+    --secondary-color: #fff;
+    --linkhov:brown;
+}
+
+#photo-page {
+    width: 100px;
+    cursor: pointer;
+}
+
+nav {
+    width: 84%;
+    margin: auto;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+
+}
+nav ul li a:hover {
+    color: var(--linkhov);
+}
+#icon {
+    width: 30px;
+    cursor: pointer;
+}
+
+nav ul {
+    flex: 1;
+    text-align: right;
+}
+
+.articles {
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+    position: relative;
+}
+
+.articles .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 150px;
+    margin-bottom: 90px;
+    padding: 0 20px;
+}
+
+.articles .box {
+    box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+    background-color: var(--primary-color);
+    border-radius: 6px;
+    overflow: hidden;
+    transition: transform var(--primary-color), box-shadow var(--secondarycolor);
+    position: relative;
+    height: 620px;
+}
+
+.articles .box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+}
+
+.articles .box img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.articles .box .content {
+    padding: 20px;
+}
+
+.articles .box .content h3 {
+    margin: 0;
+    color: var(--secondary-color);
+}
+
+.articles .box .content p {
+    margin: 10px 0 0;
+    line-height: 1.5;
+    color: var(--secondary-color);
+}
+
+.articles .box .info {
+    padding: 20px;
+    border-top: 1px solid #e6e6e7;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+.articles .box .info a {
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+
+.articles .box .info i {
+    color: var(--secondary-color);
+}
+
+.articles .box:hover .info i {
+    animation: moving-arrow 0.6s linear infinite;
+}
+bdi {
+    transition: none;
+}
