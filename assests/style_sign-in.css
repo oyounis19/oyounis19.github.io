@@ -54,7 +54,7 @@ h1 {
 .value {
     width: 150px;
     padding: 3px;
-    margin-left: 195px;
+    margin-left: 198px;
     margin-top: 40px;
     margin-bottom: 40px;
     border: none;
@@ -79,7 +79,7 @@ form a:hover {
 .enter {
     width: 200px;
     height: 40px;
-    margin-left: 180px;
+    margin-left: 173px;
     margin-bottom: 40px;
     border: 1px solid var(--bor-color);
     border-radius: 10px;
