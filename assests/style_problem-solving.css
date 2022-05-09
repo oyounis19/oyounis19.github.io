@@ -10,10 +10,11 @@
 	--color38: rgba(14, 14, 14, 0.693);
 	--talk-color38: #6b6b6b;
 	--colorless38: black;
-    --code-color38: black;
-    --comment-color38: #116d11;
+    --code-color38: #e5ad73;
+    --comment-color38: #008000;
     --textcol: black;
     --bubblecol:rgba(4, 4, 4, 0.95);
+    --h4code-color38:#eee;
 }
 
 .dark-theme{
@@ -23,9 +24,10 @@
 	--talk-color38: #668fa3a2;
 	--colorless38: #eeeeee;
     --code-color38: #9ac1e9;
-    --comment-color38: #4ea14e;
+    --comment-color38: #008000;
     --textcol: white;
     --bubblecol:rgba(221, 221, 221, 0.652);
+    --h4code-color38:#eee;
 }
 
 body{
@@ -143,12 +145,14 @@ hr {
     display: block;
     padding: 35px;
     padding-left: 90px;
-    border: 1px solid var(--color38);
-    border-radius: 75px;
+    border-radius: 5px;
     color: var(--code-color38);
     margin: 30px 0;
+    background: #16191e;
 }
-
+.Questions code h4 {
+    color: var(--h4code-color38);
+}
 .Questions span{
     color: var(--comment-color38);
 }
