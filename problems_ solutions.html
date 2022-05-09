@@ -96,8 +96,8 @@
         <h1>Problem Solving</h1>
     </section>
     <section class="langs">
-        <a href="#C"><div> C </div></a>
-        <a href="#Cplus"><div> C++</div></a>
+        <a href="#C"><div>C</div></a>
+        <a href="#Cplus"><div>C++</div></a>
         <a href="#Java"><div>Java</div></a>
         <a href="#Python"><div>Python</div></a>
     </section>
@@ -109,60 +109,297 @@
             <h2>C</h2>
             <article>
                 <h3>Write a C Program to Print "Hello World!" Program.</h3>
-                <img src="images/C/Hello world! .jpg" alt="">
+                <code>
+                      #include &lt;stdio.h&gt;<br><br>
+                      int main()<br>
+                      {<br>
+                        &nbsp;printf("Hello, World!\n");<br>
+                        &nbsp;return 0;<br>
+                      }<br>
+                </code>
             </article>
             <hr>
             <article>
                 <h3>Write a C Program to reverse a number entered by user.</h3>
-                <img src="images/C/reverse a number.jpeg" alt="">
+                <code>
+                    #include &lt;stdio.h&gt;<br>
+                    #include &lt;math.h&gt;<br><br>
+                    int main()<br>
+                    {<br><br>
+                        &nbsp;long int num, rev = 0, dig;<br>
+                        &nbsp;printf("\n\nEntar A Number----:");<br>
+                        &nbsp;scanf("%ld", &num);<br>
+                        &nbsp;while(num>0)<br><br>
+                        &nbsp;{ <br>
+                        &nbsp;&nbsp;    dig = num % 10;<br>
+                        &nbsp;&nbsp;    rev = rev * 10 + dig;<br>
+                        &nbsp;&nbsp;    num = num / 10;<br>
+                        &nbsp;}<br><br>
+                        &nbsp;printf("\nReversed Number Is----: %ld",rev);<br>
+                        &nbsp;return 0;<br>
+                    }<br>
+                </code>
             </article>
             <hr>
             <article>
                 <h3>Write a C program to multiply two numbers using plus operator.</h3>
-                <img src="images/C/multiply two numbers .jpg" alt="">
+                    <code>
+                       <span> /*  C program to multiply two numbers using plus operator  */</span><br><br>
+
+                        &nbsp;#include &lt;stdio.h&gt;<br><br>
+
+                        &nbsp;int main()<br>
+                        &nbsp;{<br>
+                        &nbsp;&nbsp;int a,b;<br>
+                        &nbsp;&nbsp;int mul,i;<br><br>
+
+                        &nbsp;&nbsp;printf("Enter first number:: ");<br>
+                        &nbsp;&nbsp;scanf("%d",&a);<br>
+                        &nbsp;&nbsp;printf("\nEnter second number:: ");<br>
+                        &nbsp;&nbsp;scanf("%d",&b);<br><br>
+
+                        &nbsp;&nbsp;mul=0;<br>
+                        &nbsp;&nbsp;for(i=1;i<=b;i++){<br>
+                        &nbsp;&nbsp;&nbsp;mul += a;<br>
+                        &nbsp;&nbsp;}<br>
+                        &nbsp;&nbsp;printf("\nMultiplication of %d and %d is: %d\n",a,b,mul);<br>
+                        &nbsp;&nbsp;return 0;<br>
+                        &nbsp;}
+                    </code>
             </article>
             <hr>
             <article>
                 <h3>Write a C program to find size of variables using sizeof() operator.</h3>
-                <img src="images/C/sizeof() operator.jpg" alt="">
+                <code>
+                    <span>/*  C program to find size of variables using sizeof() operator  */</span><br>
+
+                    &nbsp;#include &lt;stdio.h&gt;<br><br>
+
+                    &nbsp;int main()<br>
+                    &nbsp;{<br><br>
+
+                    &nbsp;&nbsp;char    a       ='Z';<br>
+                    &nbsp;&nbsp;int     b       =45;<br>
+                    &nbsp;&nbsp;float   c       =345.0f;<br>
+                    &nbsp;&nbsp;double  d       =7654.90;<br>
+                    &nbsp;&nbsp;char    str[]   ="Codezclub";<br><br>
+
+                    &nbsp;&nbsp;printf("Size of a: %d\n",sizeof(a));<br>
+                    &nbsp;&nbsp; printf("\nSize of b: %d\n",sizeof(b));<br>
+                    &nbsp;&nbsp;printf("\nSize of c: %d\n",sizeof(c));<br>
+                    &nbsp;&nbsp;printf("\nSize of d: %d\n",sizeof(d));<br>
+                    &nbsp;&nbsp;printf("\nSize of str: %d\n",sizeof(str));<br><br>
+
+                    &nbsp;&nbsp;return 0;<br>
+                    &nbsp;}
+                    </code>
             </article>
             <hr>
             <article>
                 <h3>Write a C program to find Sum and Average of two numbers.</h3>
-                <img src="images/C/Average of two numbers.jpg" alt="">
+                <code>
+                    <span>/*  C program to find Sum and Average of two numbers  */</span><br><br>
+
+                    &nbsp;#include &lt;stdio.h&gt;<br><br>
+                    
+                    &nbsp;int main()<br>
+                    &nbsp;{<br>
+                    &nbsp;&nbsp;int a,b,sum;<br>
+                    &nbsp;&nbsp;float avg;<br><br>
+                    
+                    &nbsp;&nbsp;printf("Enter first number :");<br>
+                    &nbsp;&nbsp;scanf("%d",&a);<br>
+                    &nbsp;&nbsp;printf("\nEnter second number :");<br>
+                    &nbsp;&nbsp;scanf("%d",&b);<br><br>
+                    
+                    &nbsp;&nbsp;sum=a+b;<br>
+                    &nbsp;&nbsp;avg= (float)(a+b)/2;<br><br>
+                    
+                    &nbsp;&nbsp;printf("\nSum of %d and %d is = %d\n",a,b,sum);<br>
+                    &nbsp;&nbsp;printf("\nAverage of %d and %d is = %f\n",a,b,avg);<br><br>
+                    
+                    &nbsp;&nbsp;return 0;<br>
+                    &nbsp;}
+                       
+                </code>
             </article>
             <hr>
             <article>
                 <h3>C Program to Find all Prime Numbers less than N.</h3>
-                <img src="images/C/Find all Prime Numbers less than N.jpg" alt="">
+                <code>
+                    <span>/* C Program to Find all Prime Numbers less than N  */</span> <br><br>
+
+                    &nbsp;#include &lt;stdio.h&gt;<br><br>
+
+                    &nbsp;int main()<br>
+                    &nbsp;{<br>
+                    &nbsp;&nbsp;int i, prime, lim_up, n;<br><br>
+
+                    &nbsp;&nbsp;printf("\nEnter Limit(N) upto which u want :: ");<br>
+                    &nbsp;&nbsp;scanf("%d", &lim_up);<br>
+                    &nbsp;&nbsp;printf("\nPRIME NUMBERS less than [ %d ] are :: \n\n",lim_up);<br><br>
+
+                    &nbsp;&nbsp;for(n=1; n &lt; lim_up; n++)<br>
+                    &nbsp;&nbsp;{<br>
+                    &nbsp;&nbsp;&nbsp;prime = 1;<br>
+                    &nbsp;&nbsp;&nbsp;for(i=2; i &lt; i++)<br>
+                    &nbsp;&nbsp;&nbsp;if(n%i == 0)<br>
+                    &nbsp;&nbsp;&nbsp;{<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;prime = 0;<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+                    &nbsp;&nbsp;&nbsp;}<br>
+                    &nbsp;&nbsp;&nbsp;if(prime)<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;printf(" %d ",n);<br>
+                    &nbsp;&nbsp;}<br><br>
+
+                    &nbsp;&nbsp;printf("\n");<br>
+                    &nbsp;&nbsp;return 0;<br>
+                    &nbsp;}
+
+                    </code>
             </article>
-            <hr style="width: 75%; margin-left: 10%;">                        
+            <hr style="width: 75%; margin-left: 10%;">
         </div>
         <div class="Cplus" id="Cplus">
             <h2> C++ </h2>
             <article>
                 <h3> Write Program to Find Quotient And Remainder of 2 numbers.</h3>
-                <img src="images/C++/Find Quotient And Remainder of 2 numbers .jpg" alt="">
+                <code>
+                    <span>/*  C++ Program to Find Quotient and Remainder of 2 numbers  */</span> <br><br>
+                    &nbsp;#include &lt;iostream&gt;<br>
+                    &nbsp;using namespace std;<br><br>
+                        
+                    &nbsp;int main() <br>
+                    &nbsp;{<br>
+                    &nbsp;&nbsp;int divisor, dividend, quotient, remainder;<br><br>
+                        
+                    &nbsp;&nbsp;cout << "Enter dividend :: "; <br>
+                    &nbsp;&nbsp;cin >> dividend; <br><br>
+                        
+                    &nbsp;&nbsp;cout << "\nEnter divisor :: "; <br>
+                    &nbsp;&nbsp;cin >> divisor;<br><br>
+                        
+                    &nbsp;&nbsp;quotient = dividend / divisor;<br>
+                    &nbsp;&nbsp;remainder = dividend % divisor;<br><br>
+                        
+                    &nbsp;&nbsp;cout << "\nQuotient = " << quotient << endl;<br>
+                    &nbsp;&nbsp;cout << "\nRemainder = " << remainder &lt;&lt; endl; <br><br>
+                        
+                    &nbsp;&nbsp;return 0;<br>
+                    &nbsp;}
+                </code>
             </article>
             <hr>
             <article>
                 <h3> Write Program to Swap 2 Numbers without using third variable.</h3>
-                <img src="images/C++/Swap 2 Numbers without using third variable.jpg" alt="">
+                <code>
+                    <span>/*  C++ Program to Swap Two Numbers without using third variable  */</span><br><br>
+
+                    &nbsp;#include &lt;iostream&gt;<br>
+                    &nbsp;using namespace std;<br><br>
+
+                    &nbsp;int main()<br>
+                    &nbsp;{<br>
+
+                    &nbsp;&nbsp;int a,b ;<br><br>
+
+                    &nbsp;&nbsp;cout<<"Enter 1st number :: ";<br>
+                    &nbsp;&nbsp;cin>>a;<br>
+                    &nbsp;&nbsp;cout<<"\nEnter 2nd number :: ";<br>
+                    &nbsp;&nbsp;cin>>b;<br><br>
+
+                    &nbsp;&nbsp;cout << "\nBefore swapping, Numbers are :: " << endl;<br>
+                    &nbsp;&nbsp;cout << "\n\ta = " << a << ", b = " << b << endl;<br><br>
+
+                    &nbsp;&nbsp;a = a + b;<br>
+                    &nbsp;&nbsp;b = a - b;<br>
+                    &nbsp;&nbsp;a = a - b;<br><br>
+
+                    &nbsp;&nbsp;cout << "\nAfter swapping, Numbers are :: " << endl;<br>
+                    &nbsp;&nbsp;cout << "\n\ta = " << a << ", b = " << b << endl;<br><br>
+
+                    &nbsp;&nbsp;return 0;<br>
+                    &nbsp;}
+
+                </code>
             </article>
             <hr>
             <article>
                 <h3> Write Program to Find Size of some Data Types.</h3>
-                <img src="images/C++/Find Size of some Data Types.jpg" alt="">
+                <code>
+                    <span>/*  C++ Program to Find Size of Int Float Double and Char data types  */</span><br><br>
+
+                    &nbsp;#include &lt;iostream&gt;<br>
+                    &nbsp;using namespace std;<br><br>
+
+                    &nbsp;int main()<br>
+                    &nbsp;{<br>
+                    &nbsp;&nbsp;cout << "Size of char: " << sizeof(char) << " byte" << endl;<br>
+                    &nbsp;&nbsp;cout << "\nSize of int: " << sizeof(int) << " bytes" << endl;<br>
+                    &nbsp;&nbsp;cout << "\nSize of float: " << sizeof(float) << " bytes" << endl;<br>
+                    &nbsp;&nbsp;cout << "\nSize of double: " << sizeof(double) << " bytes" << endl;<br><br>
+
+                    &nbsp;&nbsp;return 0;<br>
+                    &nbsp;}
+                </code>
             </article>
             <hr>
             <article>
                 <h3> Write program to Generate Random Numbers between 0 and 100.</h3>
-                <img src="images/C++/Generate Random Numbers .jpg" alt="">
+                <code>
+                   <span> /*  C++ Program to Generate Random Numbers between 0 and 100  */</span><br><br>
+
+                    &nbsp;#include&lt;iostream><br>
+                    &nbsp;#include&lt;stdlib.h><br>
+                    &nbsp;using namespace std;<br><br>
+
+                    &nbsp;int main()<br>
+                    &nbsp;{<br>
+                    &nbsp;&nbsp;int i;          <span>//loop counter</span><br>
+                    &nbsp;&nbsp;int num;        <span>//store random number</span><br><br>
+
+                    &nbsp;&nbsp;cout<<"Generating Random Numbers Below :: \n\n";<br>
+                    &nbsp;&nbsp;for(i=1;i<=10;i++)<br>
+                    &nbsp;&nbsp;{<br>
+                    &nbsp;&nbsp;&nbsp;num=rand()%100; <span>//get random number</span><br>
+                    &nbsp;&nbsp;&nbsp;cout<<" "&lt;&lt;num<<" ";<br>
+                    &nbsp;&nbsp;}<br><br>
+
+                    &nbsp;&nbsp;cout<<"\n";<br><br>
+
+                    &nbsp;&nbsp;return 0;<br>
+                    &nbsp;}
+                </code>
             </article>
             <hr>
             <article>
                 <h3> Write program to Find Sum and Average of 3 numbers.</h3>
-                <img src="images/C++/Find Sum and Average .jpg" alt="">
+                <code>
+                    <span>/* C++ Program to Find Sum and Average of three numbers  */</span><br><br>
+
+                    &nbsp;#include &lt;iostream&gt;<br>
+                    &nbsp;using namespace std;<br><br>
+
+                    &nbsp;int main()<br>
+                    &nbsp;{<br>
+                        &nbsp;&nbsp;float a,b,c,sum,avg;<br>
+                        &nbsp;&nbsp;cout<<"Enter 1st number :: ";<br>
+                        &nbsp;&nbsp;cin>>a;<br>
+                        &nbsp;&nbsp;cout<<"\nEnter 2nd number :: ";<br>
+                        &nbsp;&nbsp;cin>>b;<br>
+                        &nbsp;&nbsp;cout<<"\nEnter 3rd number :: ";<br>
+                        &nbsp;&nbsp;cin>>c;<br><br>
+
+                        &nbsp;&nbsp;sum=a+b+c;<br>
+
+                        &nbsp;&nbsp;avg=sum/3;<br><br>
+
+                        &nbsp;&nbsp;cout<<"\nThe SUM of 3 Numbers [ "&lt;&lt;a<<" + "&lt;&lt;b<<" + "&lt;&lt;c&lt;&lt;" ] = "&lt;&lt;sum&lt;&lt;"\n";<br>
+                        &nbsp;&nbsp;cout<<"\nThe AVERAGE of 3 Numbers [ "&lt;&lt;a<<", "&lt;&lt;b<<", "&lt;&lt;c<<" ] = "&lt;&lt;avg<<"\n";<br><br>
+
+                        &nbsp;&nbsp;return 0;<br>
+                    &nbsp;}
+                </code>
             </article>
             <hr style="width: 75%; margin-left: 10%;">
         </div>
@@ -170,27 +407,163 @@
             <h2> Java </h2>
             <article>
                 <h3> Write program to print 'Hello world!'.</h3>
-                <img src="images/Java/Hello World.jpg" alt="">
+                <code>
+                    &nbsp;public class Hello <br>
+                    &nbsp;{<br>
+                        &nbsp;&nbsp;public static void main(String[] args) <br>
+                        &nbsp;&nbsp;{<br>
+                            &nbsp;&nbsp;&nbsp;System.out.println("Hello World!");<br>
+                        &nbsp;&nbsp;}<br>
+                    &nbsp;}
+                </code>
             </article>
             <hr>
             <article>
                 <h3> Write program to check whether Given Number is Armstrong or Not.</h3>
-                <img src="images/Java/Check number.jpg" alt="">
+                <code>
+                    &nbsp;import java.util.Scanner;<br>
+                    &nbsp;import java.lang.Math;<br>
+                    &nbsp;public class Armstrong <br>
+                    &nbsp;{<br>
+
+                        &nbsp;&nbsp;public static void main(String[] args) <br>
+                        &nbsp;&nbsp;{<br>
+                            
+                            &nbsp;&nbsp;&nbsp;int a,b,n,arm=0,temp;<br>
+                            &nbsp;&nbsp;&nbsp;System.out.print("Enter No. which u want to Check :");<br>
+                            &nbsp;&nbsp;&nbsp;Scanner sc = new Scanner(System.in);<br>
+                            &nbsp;&nbsp;&nbsp;n = sc.nextInt();<br>
+                            &nbsp;&nbsp;&nbsp;temp=n;<br>
+                            &nbsp;&nbsp;&nbsp;a=countdigit(n);<br>
+                            
+                            &nbsp;&nbsp;&nbsp;while(n>0)<br>
+                            &nbsp;&nbsp;&nbsp;{<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;b=n%10;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;n=n/10;<br><br>
+                            
+                                &nbsp;&nbsp;&nbsp;&nbsp;arm = (int) (arm + Math.pow(b, a)) ;<br>
+                            
+                            &nbsp;&nbsp;&nbsp;}<br>
+
+                            &nbsp;&nbsp;&nbsp;if(arm==temp)<br>
+                            &nbsp;&nbsp;&nbsp;{<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Armstrong No.");<br>
+                            &nbsp;&nbsp;&nbsp;} <br>
+
+                            &nbsp;&nbsp;&nbsp;else<br>
+                            &nbsp;&nbsp;&nbsp;{<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Not Armstrong No.");<br>
+                            &nbsp;&nbsp;&nbsp;}<br>
+
+                        &nbsp;&nbsp;}<br><br>
+                        
+                        &nbsp;&nbsp;static int countdigit(int n)<br>
+                        &nbsp;&nbsp;{<br>
+                            &nbsp;&nbsp;&nbsp;int c=0;<br>
+                        
+                            &nbsp;&nbsp;&nbsp;while(n>0)<br>
+                            &nbsp;&nbsp;&nbsp;{<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;n=n/10;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;c++;<br>
+                            &nbsp;&nbsp;&nbsp;}<br>
+                            &nbsp;&nbsp;&nbsp;return c;<br>
+                        
+                        &nbsp;&nbsp;}<br>                                    
+                    &nbsp;}
+                </code>
             </article>
             <hr>
             <article>
                 <h3> Write program to find Reverse Number Using while loop.</h3>
-                <img src="images/Java/Reverse Number.jpg" alt="">
+                <code>
+                    &nbsp;import java.util.Scanner;<br><br>
+
+                    &nbsp;public class ReverseNumber {<br><br>
+
+                        &nbsp;&nbsp;public static void main(String[] args) {<br>
+                    
+                            &nbsp;&nbsp;&nbsp;int n,i,reverse=0,k;<br><br>
+                    
+                            &nbsp;&nbsp;&nbsp;Scanner sc = new Scanner(System.in);<br>
+                            &nbsp;&nbsp;&nbsp;System.out.print("Enter the no. which u want to reverse : ");<br>
+                            &nbsp;&nbsp;&nbsp;n=sc.nextInt();<br>
+                            &nbsp;&nbsp;&nbsp;k=n;<br>
+
+                            &nbsp;&nbsp;&nbsp;while(n&gt;0)<br>
+                            &nbsp;&nbsp;&nbsp;{<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;i=n%10;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;reverse=reverse*10+i;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;n=n/10;<br>
+                            &nbsp;&nbsp;&nbsp;}<br>
+                    
+                            &nbsp;&nbsp;&nbsp;System.out.println("Reverse of " + k + " is : "+ reverse);<br>                                
+                        &nbsp;&nbsp;}<br>
+                    
+                    &nbsp;}
+                </code>
             </article>
             <hr>
             <article>
                 <h3> Write program to find Factorial Using while loop.</h3>
-                <img src="images/Java/Factorial.jpg" alt="">
+                <code>
+                    &nbsp;import java.util.Scanner;<br><br>
+
+                    &nbsp;public class Factorial{<br><br>
+
+                        &nbsp;&nbsp;public static void main(String[] args) <br>
+                        &nbsp;&nbsp;{<br>
+                            
+                            &nbsp;&nbsp;&nbsp;int n, fact=1;<br>
+                            &nbsp;&nbsp;&nbsp;Scanner sc = new Scanner(System.in);<br>
+                            &nbsp;&nbsp;&nbsp;System.out.println("Enter any number :");<br>
+                            &nbsp;&nbsp;&nbsp;n=sc.nextInt();<br>
+                            
+                            &nbsp;&nbsp;&nbsp;int i=1;<br>
+
+                            &nbsp;&nbsp;&nbsp;while(n>=i)<br>
+                            &nbsp;&nbsp;&nbsp;{<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;fact=fact*i;<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;i++;<br>
+                            &nbsp;&nbsp;&nbsp;}<br>
+
+                            S&nbsp;&nbsp;&nbsp;ystem.out.println("Factorial is :" +fact);<br>
+                        &nbsp;&nbsp;}<br><br>
+                            
+                    &nbsp;}
+
+                </code>
             </article>
             <hr>
             <article>
                 <h3> Write program to check input number is Odd or Even.</h3>
-                <img src="images/Java/Odd or Even.jpg" alt="">
+                <code>
+                    &nbsp;import java.util.Scanner;<br><br>
+
+                    &nbsp;public class Even_odd {<br><br>
+
+                        &nbsp;&nbsp;public static void main(String[] args) {<br><br>
+                            
+                            &nbsp;&nbsp;&nbsp;int n,i;<br><br>
+                            
+                            &nbsp;&nbsp;&nbsp;System.out.println("Please Enter any No. u Want to Check :");<br>
+                            
+                            &nbsp;&nbsp;&nbsp;Scanner sc = new Scanner(System.in);<br>
+                            &nbsp;&nbsp;&nbsp;n = sc.nextInt();<br>
+
+                            &nbsp;&nbsp;&nbsp;if(n%2==0)<br>
+                            &nbsp;&nbsp;&nbsp;{<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Entered number is Even Number");<br>
+                            &nbsp;&nbsp;&nbsp;}<br>
+
+                            &nbsp;&nbsp;&nbsp;else<br>
+                            &nbsp;&nbsp;&nbsp;{<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Entered number is Odd Number");<br>
+                            &nbsp;&nbsp;&nbsp;}<br>
+                            
+                        &nbsp;&nbsp;}<br>
+                        
+                    &nbsp;}
+                </code>
             </article>
             <hr style="width: 75%; margin-left: 10%;">
         </div>
@@ -198,35 +571,223 @@
             <h2>Python</h2>
             <article>
                 <h3> Write program for Factorial of a number</h3>
-                <img src="images/Python/Factorial 1.jpg" alt="">
-                <br>
-                <img src="images/Python/Factorial 2.jpg" alt="">
+                <code>
+                    <h4>1. Recursive</h4> <br><br>
+                    <span># Python 3 program to find factorial of given number</span> <br><br>
+                    &nbsp;def factorial(n):<br>
+                        
+                    &nbsp;<span># single line to find factorial</span><br>
+                    &nbsp;&nbsp;return 1 if (n==1 or n==0) else n * factorial(n - 1);<br>
+
+                    &nbsp;<span># Driver Code</span><br>
+                    &nbsp;num = 5;<br>
+                    &nbsp;print("Factorial of",num,"is", factorial(num))
+                </code>
+                <code>
+                    <h4>2. Iterative</h4> <br><br>
+                    <span># Python 3 program to find factorial of given number</span> <br><br>
+                    &nbsp;def factorial(n):<br>
+                        &nbsp;&nbsp;if n < 0:<br>
+                            &nbsp;&nbsp;&nbsp;return 0<br>
+                        &nbsp;&nbsp;elif n == 0 or n == 1:<br>
+                            &nbsp;&nbsp;&nbsp;return 1<br>
+                        &nbsp;&nbsp;else:<br>
+                            &nbsp;&nbsp;&nbsp;fact = 1<br>
+                            &nbsp;&nbsp;&nbsp;while(n > 1):<br>
+                            &nbsp;&nbsp;&nbsp;fact *= n<br>
+                            &nbsp;&nbsp;&nbsp;n -= 1<br>
+                            &nbsp;&nbsp;&nbsp;return fact<br>
+
+                    &nbsp;<span># Driver Code</span>
+                    &nbsp;num = 5;<br>
+                    &nbsp;print("Factorial of",num,"is", factorial(num))<br>
+
+                </code>
+                <code>
+                    <h4>3. One line Solution (Using Ternary operator) </h4><br><br>
+                    <span># Python 3 program to find factorial of given number</span> <br><br>
+
+                    &nbsp;def factorial(n):<br><br>
+
+                    &nbsp;&nbsp;<span># single line to find factorial</span><br>
+                    &nbsp;&nbsp;return 1 if (n==1 or n==0) else n * factorial(n - 1)<br><br>
+
+                    &nbsp;<span># Driver Code</span><br>
+                    &nbsp;num = 5<br>
+                    &nbsp;print ("Factorial of",num,"is", factorial(num))
+
+                </code>
+                <code>
+                    <h4>4. By using In-built Function </h4><br><br>
+                    <span># Python 3 program to find factorial of given number</span> <br><br>
+                    &nbsp;import math<br><br>
+
+                    &nbsp;def factorial(n):<br>
+                    &nbsp;&nbsp;return(math.factorial(n))<br><br>
+
+                    &nbsp;<span># Driver Code</span><br>
+                    &nbsp;num = 5<br>
+                    &nbsp;print("Factorial of", num, "is", factorial(num))
+                </code>
             </article>
             <hr>
             <article>
                 <h3> Write program to find maximum of 2 Numbers</h3>
-                <img src="images/Python/maximum 1.jpg" alt="">
-                <br>
-                <img src="images/Python/maximum 2.jpg" alt="">
-            </article>
+                <code>
+                    <h4>1. If-else statement </h4>
+                    <span># Python program to find the maximum of two numbers</span> <br><br>
+
+                    &nbsp;def maximum(a, b):<br><br>
+                        
+                    &nbsp;&nbsp;if a >= b:<br>
+                    &nbsp;&nbsp;&nbsp;return a<br>
+                    &nbsp;&nbsp;else:<br>
+                    &nbsp;&nbsp;&nbsp;return b<br>
+                        
+                    &nbsp;# Driver code<br>
+                    &nbsp;a = 2<br>
+                    &nbsp;b = 4<br>
+                    &nbsp;print(maximum(a, b))<br>
+                </code>
+                <code>
+                    <h4>2. Using max() </h4>
+                    <span># Python program to find the maximum of two numbers</span> <br><br>
+
+                    &nbsp;a = 2<br>
+                    &nbsp;b = 4<br><br>
+
+                    &nbsp;maximum = max(a, b)<br>
+                    &nbsp;print(maximum)
+                </code>
+                <code>
+                    <h4>3. Using Ternary operator </h4>
+                    <span># Python program to find the maximum of two numbers</span><br><br>
+                        
+                    &nbsp;<span># Driver code</span><br>
+                    &nbsp;a = 2<br>
+                    &nbsp;b = 4<br><br>
+
+                    &nbsp;<span># Use of ternary operator</span><br>
+                    &nbsp;print(a if a >= b else b)
+                </code>
+            </article><hr>
             <article>
                 <h3> Write program for multiple of a number in Fibonacci Series. </h3>
-                <img src="images/Python/Fibonacci.jpg" alt="">
-            </article>
+                <!-- <img src="Images/Python/Fibonacci.jpg" alt=""> -->
+                <code>
+                    <span># Python Program to find position of n\'th multiple of a number k in Fibonacci Series</span><br><br>
+
+                    &nbsp;def findPosition(k, n):<br>
+                    &nbsp;&nbsp;f1 = 0<br>
+                    &nbsp;&nbsp;f2 = 1<br>
+                    &nbsp;&nbsp;i =2;<br>
+                        
+                    &nbsp;&nbsp;while i!=0:<br>
+                    &nbsp;&nbsp;&nbsp;f3 = f1 + f2;<br>
+                    &nbsp;&nbsp;&nbsp;f1 = f2;<br>
+                    &nbsp;&nbsp;&nbsp;f2 = f3;<br><br>
+
+                    &nbsp;&nbsp;&nbsp;if f2%k == 0:<br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;return n*i<br><br>
+
+                    &nbsp;&nbsp;&nbsp;i+=1<br><br>
+                            
+                    &nbsp;&nbsp;return<br>
+
+                    &nbsp;&nbsp;<span># Multiple no.</span><br>
+                    &nbsp;&nbsp;n = 5;<br>
+                    &nbsp;&nbsp;<span># Number of whose multiple we are finding</span><br>
+                    &nbsp;&nbsp;k = 4;<br><br>
+
+                    &nbsp; print("Position of n\'th multiple of k in Fibonacci Series is", findPosition(k,n));
+                </code>
+            </article><hr>
             <article>
                 <h3> Write Program to Find lardest element in an array. </h3>
-                <img src="images/Python/Array 1.jpg" alt="">
-            </article>
+                <code>
+                    <span># Python3 program to find maximum in arr[] of size n </span><br><br>
+
+                    &nbsp;<span># Function to find maximum in arr[] of size n</span><br>
+                    &nbsp;def largest(arr,n):<br>
+                    &nbsp;<span># Initialize maximum element</span><br>
+                    &nbsp;max = arr[0]		<br><br>
+
+                    &nbsp;<span># Traverse array elements from second and compare every element with current max</span>	<br>	
+                    &nbsp;for i in range(1, n):		<br>
+                    &nbsp;&nbsp;if arr[i] > max:		<br>
+                    &nbsp;&nbsp;&nbsp;max = arr[i]		<br>
+                    &nbsp;return max <br><br>
+
+                    &nbsp;<span># Driver Code</span><br>
+                    &nbsp;arr = [10, 324, 45, 90, 9808]<br>
+                    &nbsp;n = len(arr)<br><br>
+
+                    &nbsp;<span>#calculating length of an array</span><br>
+                    &nbsp;Ans = largest(arr,n)<br><br>
+
+                    &nbsp;<span># display max</span> <br>
+                    &nbsp;print ("Largest in given array is",Ans)
+                </code>
+            </article><hr>
             <article>
                 <h3> Write Program to find length of a string.</h3>
-                <img src="images/Python/string 1.jpg" alt="">
-                <img src="images/Python/string 2.jpg" alt="">
+                <code>
+                    <h4>1. Using the built-in Function len() </h4>
+                    <span># Python code to demonstrate string length using len</span> <br> <br>
+
+                    &nbsp;str = "geeks" <br>
+                    &nbsp;print(len(str))
+                </code>
+                <code>
+                    <h4>2. Using for loop </h4>
+                    <span># Python code to demonstrate string length using for loop</span> <br> <br>
+
+                    &nbsp;<span># Returns length of string</span> <br>
+                    &nbsp;def findLen(str): <br>
+                    &nbsp;&nbsp;counter = 0	<br>
+                    &nbsp;&nbsp;for i in str: <br>
+                    &nbsp;&nbsp;&nbsp;counter += 1 <br>
+                    &nbsp;&nbsp;return counter <br> <br>
+
+                    &nbsp;str = "geeks" <br>
+                    &nbsp;print(findLen(str)) <br>
+                </code>
+                <code>
+                    <h4>3. Using while loop </h4>
+                    <span># Python code to demonstrate string length using while loop.</span> <br><br>
+
+                    &nbsp;<span># Returns length of string</span><br>
+                    &nbsp;def findLen(str):<br>
+                    &nbsp;&nbsp;counter = 0<br>
+                    &nbsp;&nbsp;while str[counter:]:<br>
+                    &nbsp;&nbsp;&nbsp;counter += 1<br>
+                    &nbsp;&nbsp;return counter<br><br>
+
+                    &nbsp;str = "geeks"<br>
+                    &nbsp;print(findLen(str))<br>
+                </code>
+                <code>
+                    <h4>4. Using join and count </h4>
+                    <span># Python code to demonstrate string length using join and count</span> <br><br>
+
+                    &nbsp;<span># Returns length of string</span><br>
+                    &nbsp;def findLen(str):<br>
+                    &nbsp;&nbsp;if not str:<br>
+                    &nbsp;&nbsp;&nbsp;return 0<br>
+                    &nbsp;&nbsp;else:<br>
+                    &nbsp;&nbsp;&nbsp;some_random_str = 'py'<br>
+                    &nbsp;&nbsp;&nbsp;return ((some_random_str).join(str)).count(some_random_str) + 1 <br><br>
+
+                    &nbsp;str = "geeks" <br>
+                    &nbsp;print(findLen(str)) <br>
+                </code>
             </article>
         </div>
     </section>
 </section>
 
 </div>
+
 <!--_____________________________________________Footer_____________________________________________-->
 <div class="homefooter">
     <ul class="footerlist">
