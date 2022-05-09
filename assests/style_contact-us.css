@@ -1,17 +1,18 @@
 :root{
   --primary-color:#f9f9f9;
-  --secondary-color:#C7DDCC;
-  --third-color: #16123f;
+  --secondary-color:#ededed;
+  --third-color: #16123fb3;
   --four-color: #000;
   --five-color: #fff;
-
+  --inputhov:#e8f0fe;
 }
 .dark-theme{
   --primary-color:#232931;
-  --secondary-color:#393E46;
+  --secondary-color:#323a46;
   --third-color: #EEEEEE;
   --four-color: #fff;
   --five-color: #000;
+  --inputhov:#32405d;
 }
 * {
     -webkit-box-sizing: border-box;
@@ -60,15 +61,15 @@
     position: relative;
     background-COLOR:#c2a223;
     width: 40%;
+    padding: 10px;
     margin: auto  auto  70px;
     border-radius: 30px;
-    color: var(--four-color);
+    color: #f5f5f5;
     transition: all 0.3s;
-    padding: 10px;
     }
   .main-heading h1:hover{
-    background-color: var(--third-color);
-    color: var(--five-color);
+    background-color: #9c821c ;
+    color: #e1e1e1;
   }
 
   .main-heading p {
@@ -101,21 +102,22 @@
     display: block;
     border: 1px solid #ccc;
     margin-bottom: 30px;
-    width: 100%;
     border-radius: 5px;
+    border: none;
+    width: 100%;
+    background-color:var(--secondary-color) ;
   }
   .contact .content form .main-input:focus {
     outline: none;
+    background-color: var(--inputhov);
+    color: var(--four-color);
   }
   .contact .content form textarea.main-input {
     height: 200px;
-    transition: background-color 0.3s;
-    border-radius: 5px;
   }
-.main-input:hover{
-    background-color:var(--secondary-color) ;
-    color: var(--four-color);
-}
+/* .main-input:hover{
+   
+} */
   .contact .content form input[type="submit"] {
     background-color: #abd699;
     color: var(--five-color);
@@ -123,6 +125,8 @@
     border: none;
     display: flex;
     margin-left: auto;
+    margin-bottom: 20px;
+    border-radius: 5px;
     text-transform: uppercase;
     cursor: pointer;
     transition: all 0.3s;
