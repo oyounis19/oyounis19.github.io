@@ -9,7 +9,9 @@
 	--secondary-color: #f9f9f9;
 	--color38: rgba(14, 14, 14, 0.693);
 	--talk-color38: #6b6b6b;
-	--colorless38: #6b6b6b;
+	--colorless38: black;
+    --code-color38: black;
+    --comment-color38: #116d11;
     --textcol: black;
     --bubblecol:rgba(4, 4, 4, 0.95);
 }
@@ -20,6 +22,8 @@
 	--color38: rgba(214, 214, 214, 0.329);
 	--talk-color38: #668fa3a2;
 	--colorless38: #eeeeee;
+    --code-color38: #9ac1e9;
+    --comment-color38: #4ea14e;
     --textcol: white;
     --bubblecol:rgba(221, 221, 221, 0.652);
 }
@@ -27,21 +31,12 @@
 body{
 	background-color: var(--primary-color);
 }
+
 h1 {
     font-size: 50px;
     font-family: 'Lobster', cursive;
 }
-h3,
-p.lets,
-h2,
-h1 {
-    color: var(--textcol);
-}
-hr {
-    background-color: var(--textcol);
-    border: none;
-    height: 2px;
-}
+
 .content{
     width: 85%;
     margin: auto;
@@ -53,6 +48,19 @@ hr {
     text-align: center;
     font-size: 30px;
 }
+h3,
+p.lets,
+h2,
+h1 {
+    color: var(--textcol);
+}
+
+hr {
+    background-color: var(--textcol);
+    border: none;
+    height: 2px;
+}
+
 .langs{
     position: relative;
     /* margin-top: 160px; */
@@ -67,10 +75,12 @@ hr {
 }
 
 .content a{
-    color: var(--talk-color38);
+    color: var(--code-color38);
     cursor: pointer;
 }
-
+.content a:hover{
+    cursor: pointer;
+}
 .langs div{
     width: 150px;
     /* border: 1px solid black; */
@@ -85,18 +95,18 @@ hr {
     flex-wrap: nowrap;
     font-size: 30px;
     box-shadow: 0 0 20px 0px var(--color38);
-    /* color: red;
-    background: blue; */
 }
 
 .langs div:hover{
     box-shadow: 0 0 20px 0px var(--bubblecol);
 }
+
 .lets{
     padding: 75px 0px;
     font-size: 40px;
     font-family: 'Lobster', cursive;
     text-align: center;
+    color: var(--code-color38);
 }
 .Questions div{
     margin: 50px 0;
@@ -112,13 +122,33 @@ hr {
     text-align: center;
     font-size: 45px;
     padding: 20px 0;
+    color: var(--colorless38);
 }
 .Questions h3{
     font-size: 25px;
     padding: 5px 0;
+    color: var(--colorless38);
+}
+.Questions h4{
+    font-size: 15px;
+    padding: 5px 0;
+    color: var(--colorless38);
 }
 .Questions img{
     width: 95%;
     margin: 20px 0;
     border-radius: 30px;
+}
+.Questions code{
+    display: block;
+    padding: 35px;
+    padding-left: 90px;
+    border: 1px solid var(--color38);
+    border-radius: 75px;
+    color: var(--code-color38);
+    margin: 30px 0;
+}
+
+.Questions span{
+    color: var(--comment-color38);
 }
