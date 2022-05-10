@@ -25,7 +25,7 @@ a{
 }
 .Exercises_and_Quizzes h1{
   text-align: center;
-  background-color: #c2a223;
+  background-color: #75C9B7;
   color: #f5f5f5 ;
   margin: 30px auto  ;
   width: 40%;
@@ -37,7 +37,7 @@ a{
 }
 
 .Exercises_and_Quizzes h1:hover{
-  background-color: #9b821f;
+  background-color: #5b9d8f;
   color: #e1e1e1;
 }
 
@@ -112,6 +112,14 @@ hr{
   background-color: var(--five-color);
   border: none;
   margin: revert;
+}
+
+.hr1 {
+    height: 2px;
+    background-color: #000;
+    border: none;
+    width: 98%;
+    margin: auto;
 }
 
 .links p{
