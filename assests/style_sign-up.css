@@ -76,7 +76,7 @@ div.left {
     font-weight: bold;
     font-size: 7em;
     width: 60%;
-    height: calc(100vh - 85px);
+/*     height: calc(100vh - 85px); */
     background: linear-gradient(135deg, var(--left-top-color27) ,var(--left-bottom-color27));
     overflow: hidden;
     margin-bottom: -4px;
@@ -131,7 +131,7 @@ div.right {
     justify-content: space-around;
     background: var(--right27);
     width: 40%;
-    height: calc(100vh - 85px);
+/*     height: calc(100% - 85px); */
     padding: 1% 2.3%;
     transition: all .3s;
 }
