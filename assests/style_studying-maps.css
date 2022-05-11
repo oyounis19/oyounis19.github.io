@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Fira Sans", sans-serif;
+}
+:root{
+    --bodycolor:#dfdce3;
+    --h1_hamouda:#16123fd3;
+    --h2_he5a:rgba(115, 201, 182, 85);
+    --h3_he5a:#68A7AD;
+    --h4_he5a:#99C4C8;
+    --h5_he5a:rgba(0, 0, 0, 0.753);
+
+}
+.dark-theme {
+    --bodycolor:#393E46;
+    --h1_hamouda:#4Ecca3;
+    --h2_he5a:#393E46;
+    --h3_he5a:#232931;
+    --h4_he5a:#232931;
+    --h5_he5a:rgba(255, 255, 255, 0.61);
+
+
+}
+body{
+    background-color: var(--bodycolor);
+}
+h1{
+    font-size: 20px;
+    align-self: center;
+    display: flex;
+    color:var(--h1_hamouda) ;
+    justify-content: center;
+}
+h2{
+    font-size: 17px;
+    color:var(--h1_hamouda) ;
+    justify-content: center;
+    display: flex;
+}
+.h1_hamouda{
+    font-size: 64px;
+    color:var(--h1_hamouda) ;
+    display: flex;
+    justify-content: center;
+    padding-top: 7%;
+}
+.p3{
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5%;
+    color: #6b6b6b;
+}
+.h2_hamouda{
+    font-size: 32px;
+    display: flex;
+    color: #16123fd3;
+    justify-content: center; 
+}
+.h2_hamouda span{
+    background-color: #99C4C8;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+.h2_hamouda span:hover{
+    /* display: block; */
+    box-shadow: 0px 0px 20px 0px #00000087;
+
+}
+
+.h3_hamouda{
+    font-size: 32px;
+    display: flex;
+    color: #16123fd3;
+    justify-content: center; 
+}
+.h3_hamouda span{
+    background-color: #99C4C8;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 25px;
+}
+.h3_hamouda span:hover{
+    /* display: block; */
+    box-shadow: 0px 0px 20px 0px #00000087;
+}
+.row{
+   margin-top: 5%;
+   display: flex;
+   justify-content: space-between; 
+   margin: 0px 10px;
+}
+.col{
+    flex-basis: 31%;
+    background: linear-gradient(135deg,var(--h3_he5a),var(--h4_he5a));
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    height: 19em;
+}
+p{
+    margin-top: 10px;
+    text-indent: 10px;
+    color: var(--h5_he5a);
+    line-height: 20px;
+}
