@@ -34,11 +34,11 @@ body {
 
 .road {
     background-color: var(--back-road-color);
-    height: 100px;
-    width: 500px;
+    height: 150px;
+    width: 550px;
     margin: 20px;
     margin-left: 290px;
-    padding-top: 40px;
+    padding-top: 35px;
     border: 5px solid var(--border-color);
     border-radius: 20PX;
     transition-duration: 0.3s;
@@ -64,9 +64,9 @@ body {
 .titel {
     background-color: var(--title-color);
     height: 95px;
-    width: 900px;
+    width: 1000px;
     margin: 60px;
-    margin-left: 390px;
+    margin-left: 445px;
     border: 5px solid var(--bord-color);
     border-radius: 20px;
     word-break: break-all;
@@ -74,13 +74,12 @@ body {
 
 .steps {
     background-color:var(--steps-color) ;
-    height: 250px;
+    height: 280px;
     width: 1100px;
     margin: 40px;
     margin-left: 390px;
     border: 3px solid var(--steps-border-color);
     border-radius: 20px;
-    overflow: auto;
     padding :15px;
 }
 
