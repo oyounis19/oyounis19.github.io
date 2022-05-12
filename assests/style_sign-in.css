@@ -46,7 +46,7 @@ h1 {
     color:var(--newaccount-color) ;
     border: 3px solid var(--back-all-color);
     position: absolute;
-    left: 80.55%;
+    left: 85.5%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
