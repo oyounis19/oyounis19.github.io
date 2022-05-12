@@ -98,11 +98,11 @@
     <div class="all">
         <form method="post">
             <h1> sign in </h1> <br>
-            <input class="enter" type="email" required placeholder=" Email"> <br>
-            <input class="enter" type="password" required placeholder=" password " minlength="8" maxlength="20"> <br>
+            <input class="enter" type="email" id="enter1" placeholder=" Email"> <br>
+            <input class="enter" type="password" id="enter2" placeholder=" password " minlength="8" maxlength="20"> <br>
             <input class="me" type="checkbox" checked="checked" id="check"> <label for="check">remember me</label> 
             <br>
-            <input class="value" type="submit" value="Log in" > 
+            <input class="value" type="submit" onclick="noValue()" value="Log in" > 
             <br>
             <div class="forget">
                 <a  class="forget1" href="#" > forgot your password?  </a> <br>
@@ -150,5 +150,16 @@
     </div>
 </div>
 <script src="js/javascript.js"></script>
+<script>
+    function noValue(){
+        if(document.getElementById('enter1').value== ''|| document.getElementById('enter1').value == null){
+            alert("Please fill the email area");
+        } 
+        if(document.getElementById('enter2').value=='' || document.getElementById('enter2').value==null){ 
+            alert("Please fill the password area"); return; 
+        }
+        window.location.href ="index.html"; alert("thank you"); 
+    }
+</script>
 </body>
 </html>
