@@ -78,6 +78,7 @@ ul, a{
     z-index: 100;
     box-shadow: 0 0 20px 0  rgba(0, 0, 0, 0.6);
     border-radius: 0 0 10px 10px;
+    backdrop-filter: blur(10px);
 }
 .navebar .logo{
     width:15%;
